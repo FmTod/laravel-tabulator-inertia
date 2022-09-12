@@ -1,26 +1,29 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "fmtod/laravel-tabulator-inertia",
+    "description": "Plugin for laravel-tabulator to render tables using inertia response factory",
     "keywords": [
-        ":vendor_name",
+        "FmTod",
         "laravel",
-        ":package_slug"
+        "laravel-tabulator-inertia"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/fmtod/laravel-tabulator-inertia",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "FmTod",
+            "email": "it@fmtod.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
-        "spatie/laravel-package-tools": "^1.13.0",
-        "illuminate/contracts": "^9.0"
+        "fmtod/laravel-tabulator": "^0.7",
+        "illuminate/contracts": "^9.0",
+        "inertiajs/inertia-laravel": "^0.6.3",
+        "spatie/laravel-package-tools": "^1.13.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^6.0",
         "nunomaduro/larastan": "^2.0.1",
@@ -35,13 +38,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "FmTod\\LaravelTabulatorInertia\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "FmTod\\LaravelTabulatorInertia\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,18 +53,25 @@
         "format": "vendor/bin/pint"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "TabulatorInertiaServiceProvider"
+            ]
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/FmTod/laravel-tabulator"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
