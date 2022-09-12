@@ -4,23 +4,12 @@ namespace FmTod\LaravelTabulatorInertia;
 
 use FmTod\LaravelTabulator\TabulatorTable;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\ServiceProvider;
 use Inertia\Response;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class TabulatorInertiaServiceProvider extends PackageServiceProvider
+class TabulatorInertiaServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
-    {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
-        $package->name('laravel-tabulator-inertia');
-    }
-
-    public function packageBooted(): void
+    public function boot(): void
     {
         TabulatorTable::macro(
             name: 'inertia',
