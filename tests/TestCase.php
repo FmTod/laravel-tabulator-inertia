@@ -3,9 +3,9 @@
 namespace FmTod\LaravelTabulatorInertia\Tests;
 
 use FmTod\LaravelTabulator\TabulatorServiceProvider;
+use FmTod\LaravelTabulatorInertia\TabulatorInertiaServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use FmTod\LaravelTabulatorInertia\TabulatorInertiaServiceProvider;
 
 class TestCase extends Orchestra
 {

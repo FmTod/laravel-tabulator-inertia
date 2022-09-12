@@ -24,8 +24,7 @@ class TabulatorInertiaServiceProvider extends PackageServiceProvider
     {
         TabulatorTable::macro(
             name: 'inertia',
-            macro: static function (string $component, array $props = []): Response|JsonResponse
-            {
+            macro: static function (string $component, array $props = []): Response|JsonResponse {
                 return app(static::class)->render($component, $props, InertiaRenderer::class);
             }
         );

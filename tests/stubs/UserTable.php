@@ -13,7 +13,6 @@ use Illuminate\Support\Collection;
 
 class UserTable extends TabulatorTable
 {
-
     public function config(): TabulatorConfig
     {
         return Tabulator::config();
