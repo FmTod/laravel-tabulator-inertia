@@ -18,8 +18,7 @@ composer require fmtod/laravel-tabulator-inertia
 ## Usage
 
 ```php
-$laravelTabulatorInertia = new FmTod\LaravelTabulatorInertia();
-echo $laravelTabulatorInertia->echoPhrase('Hello, FmTod!');
+UserTable::inertia('Pages/UserList', ['extra' => $extra])
 ```
 
 ## Testing
