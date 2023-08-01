@@ -37,9 +37,6 @@ jobs:
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick, fileinfo
           coverage: xdebug
 
-      - name: Set Composer GitHub Authentication
-        run: composer config github-oauth.github.com ${{ secrets.GITHUB_TOKEN }}
-
       - name: Get Composer Cache Directory
         id: composer-cache
         run: echo "composer_dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
@@ -55,6 +52,9 @@ jobs:
         run: |
           echo "::add-matcher::${{ runner.tool_cache }}/php.json"
           echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
+
+      - name: Set Composer GitHub Authentication
+        run: composer config github-oauth.github.com ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: |
