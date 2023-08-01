@@ -1,10 +1,5 @@
 # Laravel Tabulator InertiaJS Plugin
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/fmtod/laravel-tabulator-inertia.svg?style=flat-square)](https://packagist.org/packages/fmtod/laravel-tabulator-inertia)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/fmtod/laravel-tabulator-inertia/run-tests?label=tests)](https://github.com/fmtod/laravel-tabulator-inertia/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/fmtod/laravel-tabulator-inertia/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/fmtod/laravel-tabulator-inertia/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/fmtod/laravel-tabulator-inertia.svg?style=flat-square)](https://packagist.org/packages/fmtod/laravel-tabulator-inertia)
-
 Plugin for laravel-tabulator to render tables using inertia response factory.
 
 ## Installation
