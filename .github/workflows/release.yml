@@ -21,6 +21,7 @@ jobs:
     name: '🔎 Analize'
     uses: ./.github/workflows/_analyze.yml
     if:  ${{ !startsWith(github.head_ref, 'renovate/') && github.event.pull_request.draft == false }}
+    secrets: inherit
 
   test:
     name: '🧪 Test'
