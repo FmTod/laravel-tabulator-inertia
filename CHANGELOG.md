@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-tabulator-inertia` will be documented in this file.
 
+## v11.0.0 - 2025-03-03
+
+**Full Changelog**: https://github.com/FmTod/laravel-tabulator-inertia/compare/v1.1.0...v11.0.0
+
 ## v1.1.0 - 2025-02-20
 
 ### What's Changed
