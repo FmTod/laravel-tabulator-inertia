@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^8.1|^8.2",
+        "php": ">=8.2",
         "fmtod/laravel-tabulator": "*",
         "illuminate/contracts": "^10.0|^11.0",
         "inertiajs/inertia-laravel": "*"
