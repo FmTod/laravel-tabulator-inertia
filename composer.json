@@ -66,7 +66,8 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/FmTod/laravel-tabulator"
+            "url": "https://github.com/FmTod/laravel-tabulator",
+            "no-api": true
         }
     ],
     "minimum-stability": "dev",
